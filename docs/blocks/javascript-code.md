@@ -95,6 +95,9 @@ automaFetch('json', { url: 'https://api.example.com'}).then((result) => {
 automaFetch('json', {
 	url: 'https://api.example.com',
 	method: 'POST',
+	headers: {
+	    'Content-Type': 'application/json'
+	},
 	body: JSON.stringify({
 		title: 'Hello world',
 	}),
